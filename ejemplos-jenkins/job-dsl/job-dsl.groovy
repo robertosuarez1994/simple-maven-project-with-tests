@@ -6,7 +6,6 @@ pipelineJob(job_name) {
     definition {
         cps {
             script(readFileFromWorkspace('pipeline-ejemplo.groovy'))
-            sandbox()
         }
     }
 }
@@ -19,7 +18,6 @@ pipelineJob(job_name_2) {
                 git('https://github.com/robertosuarez1994/simple-maven-project-with-tests.git')
                 scriptPath('ejemplos-jenkins/job-dsl/pipeline-ejemplo.groovy')
             }
-            sandbox()
         }
     }
 }
