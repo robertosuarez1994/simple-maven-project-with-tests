@@ -16,7 +16,7 @@ pipelineJob(job_name_2) {
         cpsScm {
             scm{
                 git{
-                    branch('master')
+                    branch('*/master')
                     remote{
                         url('https://github.com/robertosuarez1994/simple-maven-project-with-tests.git')
                     }
