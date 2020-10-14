@@ -15,7 +15,7 @@ pipelineJob(job_name_2) {
     definition {
         cpsScm {
             scm{
-                git('https://github.com/robertosuarez1994/simple-maven-project-with-tests.git')
+                git('https://github.com/robertosuarez1994/simple-maven-project-with-tests.git','master')
                 
             }
             scriptPath('ejemplos-jenkins/job-dsl/pipeline-ejemplo.groovy')
