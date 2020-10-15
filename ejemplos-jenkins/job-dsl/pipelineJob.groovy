@@ -1,4 +1,4 @@
-pipelineJob('pipelineJobGenerate') {
+pipelineJob('jobDSL_folder/pipelineJobGenerate') {
     definition {
         cpsScm {
             scm{
@@ -8,7 +8,7 @@ pipelineJob('pipelineJobGenerate') {
                     }
                 }
             }  
-            scriptPath('ejemplos-jenkins\job-dsl\pipelineMVN.groovy')
+            scriptPath('ejemplos-jenkins/job-dsl/pipelineMVN.groovy')
         }
     }
 }
