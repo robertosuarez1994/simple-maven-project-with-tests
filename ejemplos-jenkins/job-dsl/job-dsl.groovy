@@ -2,13 +2,13 @@ job_name = "ejemplo-pipeline-job-dsl"
 
 job_name_2 = "otro-pipeline-job-dsl"
 
-pipelineJob(job_name) {
-    definition {
-        cps {
-            script(readFileFromWorkspace('pipeline-ejemplo.groovy'))
-        }
-    }
-}
+//pipelineJob(job_name) {
+//    definition {
+//        cps {
+//            script(readFileFromWorkspace('pipeline-ejemplo.groovy'))
+//        }
+//    }
+//}
 
 //prueba
 pipelineJob(job_name_2) {
