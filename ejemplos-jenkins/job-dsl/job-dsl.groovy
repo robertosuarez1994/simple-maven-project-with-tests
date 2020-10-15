@@ -10,7 +10,7 @@ pipelineJob(job_name) {
     }
 }
 
-
+//prueba
 pipelineJob(job_name_2) {
     definition {
         cpsScm {
@@ -23,7 +23,7 @@ pipelineJob(job_name_2) {
                 }
                 
             }
-            scriptPath('ejemplos-jenkins/job-dsl/pipeline-ejemplo.groovy')
+            script(readFileFromWorkspace('ejemplos-jenkins/job-dsl/pipeline-ejemplo.groovy'))
         }
     }
 }
