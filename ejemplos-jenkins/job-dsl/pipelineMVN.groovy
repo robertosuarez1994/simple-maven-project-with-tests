@@ -4,6 +4,8 @@ pipeline {
     stages {
         stage('pull repository') {
             steps {
+
+                //prueba
                 echo '****haciendo pull de nuestro repositorio*****'
                 git 'https://github.com/robertosuarez1994/simple-maven-project-with-tests.git'
             }
